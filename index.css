@@ -1,0 +1,1216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0f0f0f;
+    color: rgb(128, 81, 20);
+    overflow-x: hidden;
+    font-family: "Monotype Corsiva", cursive;
+}
+
+/* ------------------ Page 1 ---------------------------- */
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    background: url("img/cakeBanner.jpg") center/cover no-repeat;
+}
+
+section {
+    min-height: 70vh;
+    width: 100%;
+    padding: 0 8%;
+}
+
+/* ---------------- Navbar ---------------- */
+
+nav {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo p {
+    font-size: 40px;
+    color: rgb(128, 81, 20);
+}
+
+
+/* ---------------- Navigation ---------------- */
+
+.navlink {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.navlink a {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #fff;
+    color: #f30096;
+    text-decoration: none;
+    font-size: 22px;
+    box-shadow: 2px 2px 5px black;
+    transition: .3s;
+}
+
+.navlink a:hover {
+    background: rgb(128, 81, 20);
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* ---------------- Main Content ---------------- */
+
+.maincontent {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 30px;
+}
+
+.mainhead {
+    font-size: 90px;
+    color: rgb(128, 81, 20);
+    text-shadow: 2px 2px 5px white;
+}
+
+.mainbutton {
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Make images responsive */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ================= Laptop ================= */
+
+@media (max-width:1200px) {
+
+    .mainhead {
+        font-size: 70px;
+    }
+
+    .navlink {
+        gap: 25px;
+    }
+
+    .navlink a {
+        font-size: 20px;
+    }
+}
+
+/* ================= Tablet ================= */
+
+@media (max-width:992px) {
+    p {
+        font-size: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 50px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .logo p {
+        font-size: 100px;
+    }
+
+    .navlink {
+        margin-top: 20px;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .navlink a {
+        padding: 10px;
+        font-size: 50px;
+    }
+
+    .mainhead {
+        font-size: 100px;
+    }
+
+    .maincontent {
+        font-size: 50px;
+    }
+
+    .mainbutton {
+        font-family: 100px;
+    }
+}
+
+/* ================= Mobile ================= */
+@media (max-width:768px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo p {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .navlink {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navlink a {
+        font-size: 70px;
+        padding: 10px;
+    }
+
+    .mainbutton {
+        font-size: 30px;
+    }
+}
+
+/* ================= Small Phones ================= */
+@media (max-width:480px) {
+
+    section {
+        padding: 0 5%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo p {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .navlink {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .navlink a {
+        width: 90%;
+        display: block;
+        max-width: 250px;
+        text-align: center;
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    .mainhead {
+        font-size: 34px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    .maincontent {
+        font-size: 17px;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .mainbutton {
+        font-size: 30px;
+    }
+}
+
+/* page2------------------------------------------------------------------ */
+ /*==============================
+      Meet Baker Section
+==============================*/
+
+.baker-section{
+
+    position:relative;
+    overflow:hidden;
+    padding:120px 8%;
+    background:#f7f1e8;
+}
+
+.baker-container{
+
+    max-width:1300px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:80px;
+    flex-wrap:wrap;
+}
+
+/* Background circles */
+
+.baker-bg-circle{
+
+    position:absolute;
+    border-radius:50%;
+    z-index:0;
+}
+
+.circle1{
+
+    width:320px;
+    height:320px;
+
+    background:#d8c3aa55;
+
+    top:-80px;
+    right:-80px;
+}
+
+.circle2{
+
+    width:220px;
+    height:220px;
+
+    background:#8d6e6344;
+
+    bottom:-70px;
+    left:-70px;
+}
+
+/*====================
+IMAGE
+=====================*/
+
+.baker-image{
+
+    flex:1;
+    min-width:320px;
+    position:relative;
+    z-index:2;
+}
+
+.image-frame{
+
+    background:white;
+    border-radius:35px;
+    padding:18px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.12);
+
+    transform:rotate(-3deg);
+
+    transition:.5s;
+}
+
+.image-frame:hover{
+
+    transform:rotate(0deg) scale(1.02);
+}
+
+.image-frame img{
+
+    width:100%;
+    display:block;
+
+    border-radius:25px;
+}
+
+/* Floating Card */
+
+.floating-card{
+
+    position:absolute;
+
+    right:-20px;
+    bottom:30px;
+
+    background:#6f4e37;
+    color:white;
+
+    padding:18px 24px;
+
+    border-radius:18px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+    animation:float 3s ease-in-out infinite;
+}
+
+.floating-card span{
+
+    font-size:28px;
+}
+
+.floating-card p{
+
+    margin:0;
+    font-size:15px;
+}
+
+/*==================
+CONTENT
+===================*/
+
+.baker-content{
+
+    flex:1;
+    min-width:330px;
+    position:relative;
+    z-index:2;
+}
+
+.baker-tag{
+
+    display:inline-block;
+
+    background:#d9c2a4;
+    color:#6f4e37;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    font-weight:600;
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+}
+
+.baker-content h2{
+
+    font-size:52px;
+    color:#3d2b1f;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.baker-content h2 span{
+
+    color:#8a5b3d;
+}
+
+.intro{
+
+    font-size:22px;
+    color:#6f4e37;
+    margin-bottom:18px;
+    font-weight:500;
+}
+
+.baker-content p{
+
+    color:#6c5a4d;
+    line-height:1.9;
+    font-size:17px;
+}
+
+/* Features */
+
+.baker-features{
+
+    margin:40px 0;
+
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.baker-features div{
+
+    background:white;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    flex:1;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+}
+
+.baker-features div:hover{
+
+    transform:translateY(-8px);
+}
+
+.baker-features span{
+
+    font-size:34px;
+}
+
+.baker-features h4{
+
+    margin-top:12px;
+    color:#5b3b27;
+}
+
+/* Button */
+
+.baker-btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#6f4e37;
+    color:white;
+
+    padding:16px 34px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.35s;
+}
+
+.baker-btn:hover{
+
+    background:#8b5e3c;
+    transform:translateY(-3px);
+}
+
+/* Animation */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.baker-container{
+
+    flex-direction:column;
+    text-align:center;
+}
+
+.floating-card{
+
+    right:50%;
+    transform:translateX(50%);
+}
+
+.baker-features{
+
+    justify-content:center;
+}
+
+.baker-content h2{
+
+    font-size:40px;
+}
+
+}
+/* page4------------------------------------------ */
+/* ======================================================
+                    SIGNATURE SECTION
+====================================================== */
+
+.signaturesection {
+    background: burlywood;
+    padding: 60px 8%;
+    color: #f30096;
+}
+
+.signature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.signaturesection h1 {
+    color: rgb(128, 81, 20);
+    font-size: 50px;
+}
+
+.signaturesection p {
+    font-size: 70px;
+    text-shadow: 2px 2px 5px white;
+}
+
+/* ================= Cards ================= */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 250px;
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+    transition: .3s;
+}
+
+.container:hover {
+    transform: translateY(-8px);
+}
+
+.container img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.container h2 {
+    margin-top: 15px;
+    color: rgb(128, 81, 20);
+}
+
+.container p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: #444;
+}
+
+/* ======================================================
+                    RESPONSIVE
+====================================================== */
+
+/* ---------- Laptop ---------- */
+
+@media(max-width:1200px) {
+
+    .signaturesection h1 {
+        font-size: 42px;
+    }
+
+    .signaturesection p {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 220px;
+    }
+
+    .container img {
+        height: 250px;
+    }
+
+}
+
+/* ---------- Tablet ---------- */
+
+@media(max-width:992px) {
+
+    .signaturesection {
+        padding: 50px 6%;
+    }
+
+    .signaturesection h1 {
+        font-size: 36px;
+    }
+
+    .signaturesection p {
+        font-size: 22px;
+    }
+
+    .signature p {
+        font-size: 50px;
+    }
+
+    .cards {
+        gap: 25px;
+    }
+
+    .container {
+        width: 45%;
+        max-width: 280px;
+    }
+
+    .container img {
+        height: 240px;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:768px) {
+
+    .signaturesection h1 {
+        font-size: 30px;
+    }
+
+    .signaturesection p {
+        font-size: 50px;
+    }
+
+    .cards {
+        gap: 20px;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 320px;
+    }
+
+    .container img {
+        height: 260px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+}
+
+/* ---------- Small Phones ---------- */
+
+@media(max-width:480px) {
+
+    .signaturesection {
+        padding: 40px 5%;
+    }
+
+    .signaturesection h1 {
+        font-size: 26px;
+    }
+
+    .signaturesection p {
+        font-size: 30px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .container img {
+        height: 220px;
+    }
+
+    .container h2 {
+        font-size: 22px;
+    }
+
+    .container p {
+        font-size: 15px;
+    }
+
+}
+
+button {
+    padding: 18px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    background: #ffb347;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+}
+
+button:hover {
+    background: #f30096;
+    transform: translateY(-5px);
+}
+
+/* footer---------------------------- */
+/* ======================================================
+                        FOOTER
+====================================================== */
+
+.footer {
+    background: #3e2715;
+    color: white;
+    padding: 60px 8% 25px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.footer-box h2 {
+    margin-bottom: 18px;
+    color: #ffb347;
+    font-size: 30px;
+}
+
+.footer-box p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #f5f5f5;
+}
+
+.footer-box a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 12px;
+    font-family: "Poppins", sans-serif;
+    transition: .3s;
+}
+
+.footer-box a:hover {
+    color: #ffb347;
+    transform: translateX(6px);
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer hr {
+    margin: 40px 0 20px;
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, .25);
+}
+
+.copyright {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #ddd;
+    font-size: 15px;
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:768px) {
+
+    .footer {
+        padding: 50px 6% 20px;
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+
+    .footer-box h2 {
+        font-size: 26px;
+    }
+
+    .socials {
+        align-items: center;
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .footer {
+        padding: 40px 5% 20px;
+    }
+
+    .footer-box h2 {
+        font-size: 24px;
+    }
+
+    .footer-box p,
+    .footer-box a {
+        font-size: 15px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+
+}
+
+/* page3------------------------------------------------------------------------------------------------- */
+/* ==================================================
+                CAKE PROMOTION SECTION
+================================================== */
+
+.cake-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Video */
+
+.cake-video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Dark Overlay */
+
+.cake-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .55);
+    z-index: -1;
+}
+
+/* Glass Card */
+
+.cake-card {
+
+    width: 90%;
+    max-width: 700px;
+
+    padding: 50px 40px;
+
+    background: rgba(255, 255, 255, .12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, .25);
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    color: #fff;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .4);
+
+}
+
+/* Heading */
+
+.cake-card h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 25px;
+
+    background: linear-gradient(90deg,
+            #ffe8b6,
+            #ffb347,
+            #ff6f91);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* Paragraph */
+
+.cake-card p {
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+
+    color: #f4f4f4;
+
+}
+
+/* Button */
+
+.cake-btn {
+
+    padding: 16px 45px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: linear-gradient(135deg,
+            #ffcf71,
+            #ff9a44,
+            #ff4e7a);
+
+    color: white;
+
+    transition: .35s;
+
+    box-shadow: 0 10px 25px rgba(255, 111, 145, .45);
+
+}
+
+.cake-btn:hover {
+
+    transform: translateY(-6px) scale(1.05);
+
+    box-shadow: 0 0 25px rgba(255, 183, 77, .8);
+
+}
+
+/* Remove underline */
+
+.cake-card a {
+    text-decoration: none;
+}
+
+/* ==================================================
+                    Responsive
+================================================== */
+
+@media(max-width:992px) {
+
+    .cake-card {
+        padding: 40px 30px;
+    }
+
+    .cake-card h2 {
+        font-size: 34px;
+    }
+
+    .cake-card p {
+        font-size: 17px;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .cake-section {
+        min-height: 85vh;
+    }
+
+    .cake-card {
+
+        width: 92%;
+
+        padding: 35px 25px;
+
+    }
+
+    .cake-card h2 {
+        font-size: 28px;
+    }
+
+    .cake-card p {
+
+        font-size: 16px;
+
+        line-height: 1.8;
+
+    }
+
+    .cake-btn {
+
+        width: 100%;
+
+        font-size: 17px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .cake-card {
+
+        width: 95%;
+
+        padding: 30px 20px;
+
+    }
+
+    .cake-card h2 {
+
+        font-size: 24px;
+
+    }
+
+    .cake-card p {
+
+        font-size: 15px;
+
+    }
+
+    .cake-btn {
+
+        padding: 15px;
+
+        font-size: 16px;
+
+    }
+
+}
+
+/* =================================
+       GLOBAL SCROLL REVEAL
+================================= */
+
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:all 1s ease;
+
+}
+
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/* Different delays for a premium feel */
+
+.cards .reveal:nth-child(1){
+    transition-delay:.2s;
+}
+
+
+.cards .reveal:nth-child(2){
+    transition-delay:.4s;
+}
+
+
+.cards .reveal:nth-child(3){
+    transition-delay:.6s;
+}
+
+
+.footer-box:nth-child(1){
+    transition-delay:.2s;
+}
+
+
+.footer-box:nth-child(2){
+    transition-delay:.4s;
+}
+
+
+.footer-box:nth-child(3){
+    transition-delay:.6s;
+}
+
+
+.footer-box:nth-child(4){
+    transition-delay:.8s;
+}
