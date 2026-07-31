@@ -135,67 +135,15 @@ img {
 }
 
 /* ================= Tablet ================= */
-
+/* ================= Tablet ================= */
 @media (max-width:992px) {
-    p {
-        font-size: 50px;
-    }
 
     nav {
-        flex-direction: column;
-        justify-content: center;
-        font-size: 50px;
-    }
-
-    .logo img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .logo p {
-        font-size: 100px;
-    }
-
-    .navlink {
-        margin-top: 20px;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .navlink a {
-        padding: 10px;
-        font-size: 50px;
-    }
-
-    .mainhead {
-        font-size: 100px;
-    }
-
-    .maincontent {
-        font-size: 50px;
-    }
-
-    .mainbutton {
-        font-family: 100px;
-    }
-}
-
-/* ================= Mobile ================= */
-@media (max-width:768px) {
-
-    nav {
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
-        gap: 20px;
-        padding: 20px 10px;
-    }
-
-    .logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        padding: 15px 10px;
     }
 
     .logo img {
@@ -204,8 +152,55 @@ img {
     }
 
     .logo p {
+        font-size: 28px;
+    }
+
+    .navlink {
+        margin-top: 0;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navlink a {
+        padding: 10px 18px;
+        font-size: 18px;
+    }
+
+    .mainhead {
         font-size: 70px;
-        text-align: center;
+    }
+
+    .maincontent {
+        font-size: 30px;
+    }
+}
+
+/* ================= Mobile ================= */
+@media (max-width:768px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 8px;
+    }
+
+    .logo {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo p {
+        font-size: 24px;
+        text-align: left;
     }
 
     .navlink {
@@ -218,12 +213,12 @@ img {
     }
 
     .navlink a {
-        font-size: 70px;
-        padding: 10px;
+        font-size: 16px;
+        padding: 8px 16px;
     }
 
     .mainbutton {
-        font-size: 30px;
+        font-size: 24px;
     }
 }
 
@@ -236,46 +231,44 @@ img {
 
     nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 5px;
-        padding: 5px;
+        gap: 10px;
+        padding: 10px 5px;
     }
 
     .logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        flex-direction: row;
+        gap: 8px;
     }
 
     .logo img {
-        width: 55px;
-        height: 55px;
+        width: 42px;
+        height: 42px;
     }
 
     .logo p {
-        font-size: 26px;
-        text-align: center;
+        font-size: 18px;
+        text-align: left;
     }
 
     .navlink {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 12px;
-        width: 100%;
+        gap: 8px;
     }
 
     .navlink a {
-        width: 90%;
-        display: block;
-        max-width: 250px;
+        width: auto;
+        max-width: none;
         text-align: center;
-        padding: 10px;
-        font-size: 30px;
+        padding: 6px 14px;
+        font-size: 14px;
     }
 
     .mainhead {
@@ -294,7 +287,6 @@ img {
         font-size: 30px;
     }
 }
-
 /* page2------------------------------------------------------------------ */
  /*==============================
       Meet Baker Section
